@@ -39,9 +39,9 @@ main() {
 	curl -q --fail --location --progress-bar --output "$tmp_dir/xchf.tar.gz" "$release_uri"
 	# extract to tmp dir so we don't open existing executable file for writing:
 	tar -C "$tmp_dir" -xzf "$tmp_dir/xchf.tar.gz"
-	chmod +x "$tmp_dir/xchf"
+	chmod +x "$tmp_dir/tttne"
 	# atomically rename into place:
-	mv "$tmp_dir/xchf" "$exe"
+	mv "$tmp_dir/tttne" "$exe"
 	rm "$tmp_dir/xchf.tar.gz"
 
 	echo "xchf was installed successfully to $exe"
